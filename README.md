@@ -37,7 +37,7 @@ or an **Atmosphere** SD card.
 ### Steps
 
 ```sh
-git clone https://github.com/<your-user>/cheat-forge.git
+git clone https://github.com/cheatforge/cheat-forge.git
 cd cheat-forge
 npm install
 npm run dev
