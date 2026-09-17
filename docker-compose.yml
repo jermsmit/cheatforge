@@ -1,6 +1,6 @@
 services:
   cheat-forge:
-    build: .
+    image: ghcr.io/jermsmit/cheatforge:latest
     container_name: cheat-forge
     ports:
       - "8080:8080"
