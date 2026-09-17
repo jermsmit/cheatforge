@@ -4,13 +4,13 @@ import { FolderTree, MonitorDown, Terminal } from "lucide-react";
 export const Route = createFileRoute("/help")({
   head: () => ({
     meta: [
-      { title: "Where cheats go — Eden, yuzu & Atmosphere setup" },
+      { title: "Where cheats go: Eden, yuzu & Atmosphere setup" },
       {
         name: "description",
         content:
           "Exact cheat folder locations for Eden on Fedora KDE, Ubuntu and Windows, plus Atmosphere SD card layout.",
       },
-      { property: "og:title", content: "Where cheats go — Eden setup guide" },
+      { property: "og:title", content: "Where cheats go: Eden setup guide" },
       {
         property: "og:description",
         content: "Cheat folder paths for Eden on Linux and Windows, and Atmosphere on hardware.",
@@ -88,8 +88,8 @@ function HelpPage() {
           <li>Right-click the game in the Eden list and choose Properties → Add-Ons.</li>
           <li>Tick the cheat set you installed (it appears under the name you gave the set).</li>
           <li>
-            The build ID must match your game version. Update the game and the build ID changes —
-            pick the matching build in the game page, or the cheats silently do nothing.
+            The build ID must match your game version. Update the game and the build ID changes,
+            so pick the matching build in the game page, or the cheats silently do nothing.
           </li>
           <li>Cheat codes with a different build ID than your dump will never activate.</li>
         </ol>
@@ -99,8 +99,8 @@ function HelpPage() {
         <h2 className="font-semibold">Direct folder writing</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           The “Write to folder” button uses a browser feature available in Chrome, Chromium, Brave
-          and Edge (including on Fedora KDE). Firefox does not support it — use the ZIP download
-          there. You pick the folder once per session; nothing is uploaded anywhere.
+          and Edge (including on Fedora KDE). Firefox does not support it, so use the ZIP download
+          there instead. You pick the folder once per session; nothing is uploaded anywhere.
         </p>
       </section>
     </main>

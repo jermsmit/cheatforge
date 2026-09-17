@@ -1,10 +1,10 @@
-# Cheat Forge — Switch Cheat Workbench
+# Cheat Forge: Switch Cheat Workbench
 
 A local, browser-based workbench for searching a Nintendo Switch cheat database, building
 per-client cheat sets, and installing them straight into **Eden / yuzu** (Linux or Windows)
 or an **Atmosphere** SD card.
 
-- 2,114 games and 35,532 cheats, bundled as static JSON — no server, no account, no uploads
+- 2,114 games and 35,532 cheats, bundled as static JSON (no server, no account, no uploads)
 - Search by game name or title ID, browse per-build cheat lists, filter and preview codes
 - Collect cheats into named sets, edit code lines, or write your own custom cheats
 - Install with one click into your emulator folder, or download a ready-to-unzip package
@@ -28,7 +28,7 @@ or an **Atmosphere** SD card.
 
 ### Requirements
 
-- **Node.js 20 or newer** — check with `node --version`
+- **Node.js 20 or newer**, check with `node --version`
   - Fedora: `sudo dnf install nodejs`
   - Ubuntu: `sudo apt install nodejs npm` (or use [nvm](https://github.com/nvm-sh/nvm))
   - Windows: installer from [nodejs.org](https://nodejs.org)
@@ -37,8 +37,8 @@ or an **Atmosphere** SD card.
 ### Steps
 
 ```sh
-git clone https://github.com/cheatforge/cheat-forge.git
-cd cheat-forge
+git clone https://github.com/jermsmit/cheatforge.git
+cd cheatforge
 npm install
 npm run dev
 ```
@@ -82,7 +82,7 @@ Change the host port by editing the left-hand number, e.g. `-p 3000:8080`.
 
 > **Note on the container:** cheat sets are stored in your browser, not in the container,
 > so they survive rebuilds. The "Write to folder" button also runs in your browser, so it
-> writes to *your* machine's folders — not inside the container.
+> writes to *your* machine's folders, not inside the container.
 
 ## Installing cheats
 
@@ -99,7 +99,7 @@ Change the host port by editing the left-hand number, e.g. `-p 3000:8080`.
    there so the `load` folder merges.
 3. In Eden: right-click the game → **Properties** → **Add-Ons** → tick your cheat set.
 
-The build ID must match your game version — cheats with a different build ID silently do
+The build ID must match your game version: cheats with a different build ID silently do
 nothing.
 
 **Browser note:** direct folder writing uses the File System Access API, available in
