@@ -1,0 +1,7 @@
+services:
+  cheat-forge:
+    build: .
+    container_name: cheat-forge
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
